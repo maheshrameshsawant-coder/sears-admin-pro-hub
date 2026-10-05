@@ -1,0 +1,20 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Sears Admin Pro — runtime data (real employee/business records, not source code).
+# These files are created/modified at runtime via the app's login seeding,
+# Admin Console, Reports upload, and Bookings forms. They contain real names,
+# contact details, employee IDs, password hashes, financial/vendor data, and
+# internal SOP procedure text, and must never be committed.
+shared/data/*.json
+shared/data/bookings/*.json
+shared/data/expenses/*.json
+shared/data/reports/*.json
+
+# Exceptions: these two hold only field schema/labels, no personal or business records.
+!shared/data/field-config.json
+!shared/data/booking-field-config.json

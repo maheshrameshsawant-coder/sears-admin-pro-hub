@@ -1,0 +1,9 @@
+{
+  "name": "sears-admin-pro",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sears Admin Pro Hub",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
